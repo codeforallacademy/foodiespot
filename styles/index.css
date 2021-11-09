@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 .main{
@@ -18,12 +19,13 @@ nav{
 }
 
 nav .active{
-    color: #FF6347;
+    /* color: #FF7F5D; */
+    color: #FF7F5D;
 }
 
 .logo a{
     font-size: 39px;
-    color: #FF6347;
+    color: #FF7F5D;
     font-weight: bold;
     margin-left: 100px;
 }
@@ -46,11 +48,11 @@ ul li{
 }
 
 ul li a:hover {
-    color: #FF6347;
+    color: #FF7F5D;
 }
 
 .header{
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/infra\ 1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,6 +65,7 @@ ul li a:hover {
 
 .content{
     position: absolute;
+    width: 100%;
     left: 0%;
     top: 25%;
     /* transform: translate(-50%, 50%); */
@@ -72,7 +75,7 @@ ul li a:hover {
 
 .content h1{
     font-size: 50px;
-    color: #FF6347;
+    color: #FF7F5D;
 }
 
 .content p{
@@ -80,7 +83,7 @@ ul li a:hover {
     font-size: 20px;
 }
 
-.content button{
+.content .button{
     background: none;
     border: 1px solid #fff;
     color: #fff;
@@ -91,9 +94,9 @@ ul li a:hover {
     cursor: pointer;
 }
 
-button:hover{
+.content .button:hover{
     background: #000;
-    color: #FF6347;
+    color: #FF7F5D;
 }
 
 .quote{
@@ -101,5 +104,100 @@ button:hover{
 }
 
 .quote h2{
-    color: #FF6347;
+    color: #FF7F5D;
+}
+
+/* Products page */
+
+.productWrapper {
+    position: absolute;
+    top: 160%;
+    left: 6%;
+    right: 6%;
+    border: 1px solid #FF7F5D;
+    border-radius: 69px;
+    /* background: linear-gradient(to right, red, purple); */
+    /* background: linear-gradient(to right, #FF7F5D, #4849A1); */
+}
+
+.productWrapper *{
+    background: transparent;
+}
+
+.product {
+    display: flex;
+    padding: 5% 12%;
+    align-items: center;
+}
+
+.product.even{
+    flex-direction: row-reverse;
+}
+
+.product.even{
+    flex-direction: row-reverse;
+}
+
+.product.even .productHeading{
+    padding-left: 50px;
+}
+
+.product.odd .productHeading{
+    padding-right: 50px;
+}
+
+.productHeading {
+    color: #FF7F5D;
+    width: 50%;
+    font-size: 35px;
+    letter-spacing: -0.53px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productHeading strong{
+    color: #4849A1;
+}
+
+.productImgDiv{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.productImg{
+    /* width: 100%; */
+    width: 400px;
+    height: 400px;
+    border-radius: 24px;
+}
+
+
+.productText {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 48px;
+}
+
+.divider{
+    height: 1px;
+    background-color: grey;
+    opacity: 0.4;
+    left: 15%;
+    right: 15%;
+    position: absolute;
+}
+
+.footer{
+    display: flex;
+}
+
+.hide{
+    display: none;
 }
