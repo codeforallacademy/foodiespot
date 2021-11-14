@@ -3,7 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     /* font-family: 'Nunito', sans-serif; */
-	font-family: 'Big Shoulders Text', cursive;
+	font-family: 'Big Shoulders Text', cursive !important;
 }
 
 .main{
@@ -203,6 +203,15 @@ ul li a:hover {
     color: #fff;
 }
 
+.powered-by{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.powered-by span{
+    font-size: 0.7rem;
+}
+
 .hide{
     display: none;
 }
@@ -346,4 +355,22 @@ ul li a:hover {
 
 .t-chefs h2, .t-chefs h3{
 	line-height: 0.3;
+}
+
+/* contact */
+
+.t-contact-container{
+    margin: 0 10%;
+}
+
+.t-contact-input{
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;    
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    border-radius: 10px;
+    font-family: 'Big Shoulders Text', cursive;
 }

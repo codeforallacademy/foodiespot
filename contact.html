@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts/index.js"></script>
 </head>
 
 <body>
@@ -15,19 +17,37 @@
             <div class="t-header">
                 <nav>
                     <div class="logo">
-                        <a href="index.html">Foodies Spot</a>
+                        <a href="t-index.html">Foodies Spot</a>
                     </div>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="t-index.html">Home</a></li>
+                        <li><a href="t-products.html">Products</a></li>
+                        <li><a href="t-about.html">About</a></li>
+                        <li><a href="t-contact.html" class="active">Contact</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="t-overlay">
                 <div class="t-body">
                     <h1>Contact</h1>
+
+                    <!-- <img id="contact" src="map.jpg" class="t-contact-image w3-greyscale" alt="Map" style="width:100%"> -->
+                    <div class="t-contact-container">
+                        <p>Find us at some address at some place or call us at 05050515-122330</p>
+                        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food
+                            to satisfy the biggerst criteria of them all, both look and taste.</p>
+                        <p class=""><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+                        <form onsubmit="contact();return false">
+                            <p><input class="t-contact-input" type="text" id="userName" name="Name" placeholder="Name" required></p>
+                            <p><input class="t-contact-input" type="number" id="peopleCount" name="People" placeholder="How many people"
+                                    required></p>
+                            <p><input class="t-contact-input" type="datetime-local" id="bookingDate" name="date" placeholder="Date and time"
+                                    required></p>
+                            <p><textarea class="t-contact-input" type="text" id="requirements" name="Message" rows="3"
+                                    placeholder="Message/Special requirements" required></textarea></p>
+                            <p><button type="submit" class="button">SEND MESSAGE</button></p>
+                        </form>
+                    </div> 
                 </div>
             </div>
             
@@ -68,6 +88,9 @@
                 </p>
 
             </div>
+        </div>
+        <div class="powered-by">
+            <p class=""><span>Powered by</span> Code for all academy</p>
         </div>
     </div>    
 </body>
