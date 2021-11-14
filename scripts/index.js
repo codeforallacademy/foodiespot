@@ -22,16 +22,10 @@ window.onload = () => {
 
 const contact = (e) => {
     // e.preventDefault();
-    var userName = document.getElementById('userName');
-    var peopleCount = document.getElementById('peopleCount');
-    var bookingDate = document.getElementById('bookingDate');
-    var requirements = document.getElementById('requirements');
-    console.log(`${userName.value} :
-    ${peopleCount.value} :
-    ${bookingDate.value} :
-    ${requirements.value} `);
-
-    console.log(Email)
+    var userName = document.getElementById('userName').value;
+    var peopleCount = document.getElementById('peopleCount').value;
+    var bookingDate = document.getElementById('bookingDate').value;
+    var requirements = document.getElementById('requirements').value;
 
     Email.send({
         Host: "smtp.gmail.com",
@@ -39,10 +33,10 @@ const contact = (e) => {
         Password: ``,
         From: ``,
         To: ``,
-        Subject: "Booking Confirmation",
-        Body: `<h4>We have taken your booking</h4><br /> 
+        Subject: "Booking Alert",
+        Body: `<h4>We have a new booking from ${userName}</h4><br /> 
                 Slot: <b>${bookingDate}</b><br />
-                Count: <b>${peopleCount}</b>
+                Count: <b>${peopleCount}</b><br />
                 Requirements: <b>${requirements}</b>
                 `,
 
